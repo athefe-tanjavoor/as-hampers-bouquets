@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import "./globals.css";
 import { BRAND_CONFIG } from "@/lib/config";
 
 export const metadata: Metadata = {
