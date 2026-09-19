@@ -1,0 +1,39 @@
+{
+  "name": "bloom-and-blossom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production E-Commerce Platform for Bouquets, Flowers, Gift Hampers & Personalized Gifts",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "seed": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/seed.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.441.0",
+    "mongoose": "^8.6.2",
+    "next": "^14.2.11",
+    "razorpay": "^2.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "keywords": ["ecommerce", "bouquets", "flowers", "gift-hampers", "nextjs", "mongodb"]
+}
