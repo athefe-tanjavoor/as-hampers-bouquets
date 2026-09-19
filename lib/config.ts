@@ -25,28 +25,28 @@ export interface BrandConfig {
 }
 
 export const BRAND_CONFIG: BrandConfig = {
-  name: "Bloom & Blossom",
-  tagline: "Beautiful Bouquets, Thoughtful Hampers & Gifts Made With Love",
-  description: "Celebrate every little and big moment with handcrafted bouquets, elegant flower arrangements, curated gift hampers and personalized keepsakes.",
-  domain: "bloomandblossom.com",
-  baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://bloomandblossom.com",
+  name: "A.S Hampers & Bouquets",
+  tagline: "Handcrafted Bouquets, Luxury Hampers & Personalized Gifts",
+  description: "Celebrate every special moment with handcrafted bouquets, luxury flower arrangements, curated gift hampers and personalized keepsakes by A.S Hampers & Bouquets.",
+  domain: "ashampersbouquets.com",
+  baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ashampersbouquets.com",
   primaryCity: "Chennai",
-  serviceArea: "Chennai & selected areas",
-  supportPhone: "+91 98765 43210",
-  supportEmail: "hello@bloomandblossom.com",
+  serviceArea: "Chennai & selected delivery zones",
+  supportPhone: "+91 93615 36138",
+  supportEmail: "contact@ashampersbouquets.com",
   currency: "₹",
   currencyCode: "INR",
   deliveryPromise: "Same-day delivery in selected areas",
   freeDeliveryThreshold: 1499,
   standardDeliveryFee: 99,
-  announcementText: "Free Delivery on Selected Orders • Beautiful Gifts, Thoughtfully Delivered",
+  announcementText: "Order Now: +91 93615 36138 • Handcrafted Bouquets & Curated Hampers Delivered",
   announcementCta: "Shop Now",
   announcementUrl: "/bouquets",
   socials: {
-    instagram: "https://instagram.com/bloomandblossom",
-    facebook: "https://facebook.com/bloomandblossom",
-    whatsapp: "https://wa.me/919876543210",
-    pinterest: "https://pinterest.com/bloomandblossom"
+    instagram: "https://instagram.com/ashampersbouquets",
+    facebook: "https://facebook.com/ashampersbouquets",
+    whatsapp: "https://wa.me/919361536138",
+    pinterest: "https://pinterest.com/ashampersbouquets"
   }
 };
 

@@ -45,6 +45,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileNav }) => {
             >
               <Search className="w-5 h-5" />
             </button>
+            <a
+              href={`tel:${BRAND_CONFIG.supportPhone.replace(/\s+/g, "")}`}
+              className="p-2 text-[#C94F78] hover:text-[#8E294D]"
+              aria-label={`Call ${BRAND_CONFIG.supportPhone}`}
+              title={`Call ${BRAND_CONFIG.supportPhone}`}
+            >
+              <Phone className="w-4 h-4" />
+            </a>
           </div>
 
           {/* Brand Logo */}
@@ -74,15 +82,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileNav }) => {
           </div>
 
           {/* Action Icons */}
-          <div className="flex items-center space-x-4 sm:space-x-6">
+          <div className="flex items-center space-x-3 sm:space-x-5">
             <a
               href={`tel:${BRAND_CONFIG.supportPhone.replace(/\s+/g, "")}`}
-              className="hidden xl:flex items-center text-xs text-[#7A6868] hover:text-[#C94F78] transition-colors"
+              className="hidden md:flex items-center text-xs text-[#7A6868] hover:text-[#C94F78] transition-all bg-[#FCEEF2] px-3.5 py-1.5 rounded-full border border-[#F8E1E8] shadow-sm hover:shadow"
             >
-              <Phone className="w-4 h-4 mr-1.5 text-[#C94F78]" />
+              <Phone className="w-3.5 h-3.5 mr-2 text-[#C94F78]" />
               <div>
-                <span className="block text-[10px] text-gray-400">Need Help?</span>
-                <span className="font-semibold text-[#3B2A2A]">{BRAND_CONFIG.supportPhone}</span>
+                <span className="block text-[9px] uppercase tracking-wider text-gray-500 font-medium leading-none">Order / Enquiry</span>
+                <span className="font-bold text-[#8E294D] text-xs font-mono">{BRAND_CONFIG.supportPhone}</span>
               </div>
             </a>
 

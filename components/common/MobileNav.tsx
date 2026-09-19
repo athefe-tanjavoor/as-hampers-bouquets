@@ -73,10 +73,13 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
 
         {/* Footer info */}
         <div className="pt-6 border-t border-[#EEDCDA] space-y-3 text-xs text-[#7A6868]">
-          <div className="flex items-center gap-2">
+          <a
+            href={`tel:${BRAND_CONFIG.supportPhone.replace(/\s+/g, "")}`}
+            className="flex items-center gap-2 text-[#8E294D] font-bold py-1 hover:text-[#C94F78] transition-colors"
+          >
             <Phone className="w-4 h-4 text-[#C94F78]" />
-            <span>{BRAND_CONFIG.supportPhone}</span>
-          </div>
+            <span>Call: {BRAND_CONFIG.supportPhone}</span>
+          </a>
           <div className="flex items-center gap-2">
             <Truck className="w-4 h-4 text-[#C94F78]" />
             <span>{BRAND_CONFIG.deliveryPromise}</span>

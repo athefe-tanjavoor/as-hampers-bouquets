@@ -194,13 +194,35 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
-          <p>© {new Date().getFullYear()} {BRAND_CONFIG.name}. All rights reserved.</p>
-          <div className="flex items-center gap-6 text-[11px]">
-            <span>100% Handcrafted</span>
+        {/* Copyright & Professional Attribution */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} {BRAND_CONFIG.name}. All rights reserved.</p>
+            <span className="hidden sm:inline text-gray-600">•</span>
+            <p className="inline-flex items-center gap-1.5 text-[11px] text-gray-300">
+              <span>Designed & Developed by</span>
+              <a
+                href="https://aitechgrow.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-[#F8E1E8] hover:text-white transition-colors underline decoration-[#C94F78] underline-offset-4 hover:decoration-white inline-flex items-center gap-1 group"
+              >
+                <span>AiTechGrow</span>
+                <span className="text-[#C94F78] group-hover:translate-x-0.5 transition-transform">↗</span>
+              </a>
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 text-[11px] text-gray-400">
+            <span className="inline-flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C94F78]"></span>
+              100% Handcrafted
+            </span>
             <span>•</span>
-            <span>Secure Razorpay Payments</span>
+            <span className="inline-flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Secure Payments
+            </span>
             <span>•</span>
             <span>{BRAND_CONFIG.deliveryPromise}</span>
           </div>
